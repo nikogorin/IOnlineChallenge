@@ -120,6 +120,9 @@
   <data name="body" xml:space="preserve">
     <value>{0} {1} | Area {2} | Perimeter {3} &lt;br/&gt;</value>
   </data>
+  <data name="empty_key" xml:space="preserve">
+    <value>The key could not be resolved</value>
+  </data>
   <data name="empty_list" xml:space="preserve">
     <value>&lt;h1&gt;Empty list of shapes!&lt;/h1&gt;</value>
   </data>

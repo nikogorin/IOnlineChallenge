@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CodingChallenge.Data.Classes
+﻿namespace CodingChallenge.Data.Classes
 {
     public class Trapecio : FormaGeometrica
     {
@@ -33,11 +27,5 @@ namespace CodingChallenge.Data.Classes
         {
             return _baseMenor + _baseMayor + _ladoIzquierdo + _ladoDerecho;
         }
-
-        //private void ValidarBases(decimal BaseMenor, decimal BaseMayor)
-        //{
-        //    if (BaseMenor == BaseMayor)
-        //        throw new Exception("Los valores para las bases de la figura no corresponden a un trapecio");
-        //}
     }
 }

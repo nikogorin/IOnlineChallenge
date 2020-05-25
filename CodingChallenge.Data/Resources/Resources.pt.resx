@@ -120,6 +120,9 @@
   <data name="body" xml:space="preserve">
     <value>{0} {1} | Area {2} | Perimetro {3} &lt;br/&gt;</value>
   </data>
+  <data name="empty_key" xml:space="preserve">
+    <value>A chave não pôde ser resolvida</value>
+  </data>
   <data name="empty_list" xml:space="preserve">
     <value>&lt;h1&gt;Lista vazia de formas!&lt;/h1&gt;</value>
   </data>
