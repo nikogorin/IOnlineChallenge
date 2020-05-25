@@ -237,83 +237,27 @@ namespace CodingChallenge.Data.Tests
         [TestCase]
         [SetCulture("es-ES")]
         [Timeout(1000)]
-        public void TestTimeout()
+        public void TestTimeout_40000_formas()
         {
             //Arrenge
-            var formas = new List<FormaGeometrica>
+
+            var formas = new List<FormaGeometrica>();
+
+            for (int i = 0; i < 10000; i++)
             {
-                new Cuadrado(5),
-                new Circulo(3),
-                null,
-                new Triangulo(4),
-                new Cuadrado(2),
-                new Triangulo(9),
-                new Circulo(2.75m),
-                new Triangulo(4.2m),
-                new Cuadrado(5),
-                new Circulo(3),
-                null,
-                new Triangulo(4),
-                new Cuadrado(2),
-                new Triangulo(9),
-                new Circulo(2.75m),
-                new Triangulo(4.2m),
-                new Cuadrado(5),
-                new Circulo(3),
-                null,
-                new Triangulo(4),
-                new Cuadrado(2),
-                new Triangulo(9),
-                new Circulo(2.75m),
-                new Triangulo(4.2m),
-                new Cuadrado(5),
-                new Circulo(3),
-                null,
-                new Triangulo(4),
-                new Cuadrado(2),
-                new Triangulo(9),
-                new Circulo(2.75m),
-                new Triangulo(4.2m),
-                new Cuadrado(5),
-                new Circulo(3),
-                null,
-                new Triangulo(4),
-                new Cuadrado(2),
-                new Triangulo(9),
-                new Circulo(2.75m),
-                new Triangulo(4.2m),
-                new Cuadrado(5),
-                new Circulo(3),
-                null,
-                new Triangulo(4),
-                new Cuadrado(2),
-                new Triangulo(9),
-                new Circulo(2.75m),
-                new Triangulo(4.2m),
-                new Cuadrado(5),
-                new Circulo(3),
-                null,
-                new Triangulo(4),
-                new Cuadrado(2),
-                new Triangulo(9),
-                new Circulo(2.75m),
-                new Triangulo(4.2m),
-                new Cuadrado(5),
-                new Circulo(3),
-                null,
-                new Triangulo(4),
-                new Cuadrado(2),
-                new Triangulo(9),
-                new Circulo(2.75m),
-                new Triangulo(4.2m)
-            };
+                formas.Add(new Cuadrado(5));
+                formas.Add(new Circulo(3));
+                formas.Add(new Triangulo(9));
+                formas.Add(null);
+                formas.Add(new Rectangulo(2, 3));
+            }
 
             //Act
             var resumen = FormaGeometrica.Imprimir(formas);
 
             //Assert
             Assert.AreEqual(
-                "<h1>Reporte de Formas</h1>16 Cuadrados | Area 232 | Perimetro 224 <br/>16 Círculos | Area 104,07 | Perimetro 144,51 <br/>24 Triángulos | Area 397,12 | Perimetro 412,8 <br/>TOTAL:<br/>56 formas Perimetro 781,31 Area 733,19",
+                "<h1>Reporte de Formas</h1>10000 Cuadrados | Area 250000 | Perimetro 200000 <br/>10000 Círculos | Area 70685,83 | Perimetro 94247,78 <br/>10000 Triángulos | Area 350740,29 | Perimetro 270000 <br/>10000 Rectangulos | Area 60000 | Perimetro 100000 <br/>TOTAL:<br/>40000 formas Perimetro 664247,78 Area 731426,12",
                 resumen);
         }
 

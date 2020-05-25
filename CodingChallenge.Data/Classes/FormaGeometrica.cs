@@ -1,7 +1,9 @@
 ﻿/*
  * Refactorear la clase para respetar principios de programación orientada a objetos. Qué pasa si debemos soportar un nuevo idioma para los reportes, o
  * agregar más formas geométricas?
- *
+ * Para agregar un nuevo idioma, se deberá agregar un nuevo archivo de recursos con el idioma deseado.
+ * para las formas geometricas nuevas, se tiene q crear una una clase, heredando de la clase formas e implementando los metodos abstractos que calculan el area y el perimetro. 
+ * En la clase base, se tiene q agregar la logica de la nueva forma para el calculo e impresion de los resultado
  * Se puede hacer cualquier cambio que se crea necesario tanto en el código como en los tests. La única condición es que los tests pasen OK.
  *
  * TODO: Implementar Trapecio/Rectangulo, agregar otro idioma a reporting.
